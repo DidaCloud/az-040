@@ -77,7 +77,7 @@ The main tasks for this exercise are:
    - MailNickName: **Allan**
 1. Set the usage location for Allan Yoo to **US**.
 1. List the licenses SKUs available in your tenant.
-1. Create an **AssignedLicense** object, and then configure the **SkuId** property with the *SkuID* value from the **ENTERPRISEPREMIUM** license in your tenant.
+1. Create an **AssignedLicense** object, and then configure the **SkuId** property with the *SkuID* value from the **Office_365_E5_(no_Teams)** license in your tenant.
 1. Create an **AssignedLicenses** object, and then place the **AssignedLicense** object in the **AddLicenses** property.
 1. Use the **AssignedLicenses** object to assign a license to Allan Yoo.
 
