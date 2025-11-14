@@ -134,34 +134,7 @@ The PowerShell script execution policy must be set to remote signed or less rest
 1. To store the SKU ID for the intended license in a variable, enter the following command, and then press the Enter key:
 
    ```powershell
-   $SkuId = (Get-MgSubscribedSku | Where-Object { $_.SkuPartNumber -eq "ENTERPRISEPREMIUM" }).SkuId
-   ```
-
-1. To create an **AssignedLicense** object, enter the following command, and then press the Enter key:
-
-   ```powershell
-   $License = New-Object -TypeName PSCustomObject -Property @{
-    DisabledPlans = @()
-    SkuId = $SkuId
-   }
-   ```
-
-1. To add the SKU ID to the license object, enter the following command, and then press the Enter key:
-
-   ```powershell
-   $License.SkuId = $SkuId 
-   ```
-
-1. To create an **AssignedLicenses** object, enter the following command, and then press the Enter key:
-
-   ```powershell
-   $LicensesToAssign = @($License)  
-   ```
-
-1. To add the **AssignedLicense** object to the **AddLicenses** property, enter the following command, and then press the Enter key:
-
-   ```powershell
-   $LicensesToAssign += $License
+   $SkuId = (Get-MgSubscribedSku | Where-Object { $_.SkuPartNumber -eq "Office_365_E5_(no_Teams)" }).SkuId
    ```
 
 1. To configure Allan's user object with the **AssignedLicenses** object, enter the following command, and then press the Enter key:

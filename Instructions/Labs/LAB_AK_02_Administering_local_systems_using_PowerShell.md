@@ -85,7 +85,7 @@ After completing this exercise, you'll have successfully identified and used com
 1. In the **Administrator: Windows PowerShell** window, enter the following command, and then press the Enter key:
 
    ```powershell
-   Test-Connection LON-DC1
+   Test-NetConnection LON-DC1
    ```
 
 > **Note:** The test results should be returned without any noticeable delay. You will compare this response time the one after you make changes to the network configuration in this exercise.
